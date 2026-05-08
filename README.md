@@ -27,8 +27,8 @@ Projeto backend desenvolvido com Python e FastAPI com foco em aprendizado de API
 
 ## 📁 Estrutura do Projeto
 
-```id="j5u3fz"
-projeto_api/
+```
+api_usuarios_login/
 │
 └── src/
     ├── main.py
@@ -57,7 +57,7 @@ Fluxo implementado:
 
 ### 1. Instalar dependências
 
-```bash id="pph6h0"
+```bash 
 pip install fastapi uvicorn sqlalchemy passlib[bcrypt]
 ```
 
@@ -65,7 +65,7 @@ pip install fastapi uvicorn sqlalchemy passlib[bcrypt]
 
 ### 2. Executar aplicação
 
-```bash id="h4fgm6"
+```bash 
 uvicorn src.main:app --reload
 ```
 
@@ -75,7 +75,7 @@ uvicorn src.main:app --reload
 
 Após iniciar o servidor:
 
-```id="huwz57"
+```
 http://127.0.0.1:8000/docs
 ```
 
@@ -85,19 +85,19 @@ http://127.0.0.1:8000/docs
 
 ### Criar usuário
 
-```http id="s9a4wo"
+```
 POST /usuarios
 ```
 
 ### Listar usuários
 
-```http id="bg1k7x"
+```
 GET /usuarios
 ```
 
 ### Login
 
-```http id="0ykb0g"
+```
 POST /login
 ```
 
@@ -120,7 +120,6 @@ POST /login
 * Rotas protegidas
 * PostgreSQL
 * Deploy da API
-* Integração com frontend Flutter
 
 ---
 
